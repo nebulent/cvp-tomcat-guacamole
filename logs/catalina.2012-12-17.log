@@ -1,0 +1,236 @@
+Dec 17, 2012 12:31:42 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386:/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dec 17, 2012 12:31:43 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Dec 17, 2012 12:31:43 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1881 ms
+Dec 17, 2012 12:31:43 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Dec 17, 2012 12:31:43 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.36
+Dec 17, 2012 12:31:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 17, 2012 12:31:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 17, 2012 12:31:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory guacamole
+Dec 17, 2012 12:31:43 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: WebSocket support not found.
+Dec 17, 2012 12:31:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory manager
+Dec 17, 2012 12:31:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 17, 2012 12:31:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory host-manager
+Dec 17, 2012 12:31:44 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Dec 17, 2012 12:31:44 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Dec 17, 2012 12:31:44 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/86  config=null
+Dec 17, 2012 12:31:44 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1514 ms
+Dec 17, 2012 12:34:33 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Dec 17, 2012 12:34:34 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Dec 17, 2012 12:34:34 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Dec 17, 2012 12:34:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386:/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dec 17, 2012 12:34:40 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Dec 17, 2012 12:34:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1033 ms
+Dec 17, 2012 12:34:40 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Dec 17, 2012 12:34:40 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.36
+Dec 17, 2012 12:34:40 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Dec 17, 2012 12:34:41 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor guacamole.xml
+Dec 17, 2012 12:34:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: WebSocket support not found.
+Dec 17, 2012 12:34:41 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Dec 17, 2012 12:34:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 17, 2012 12:34:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 17, 2012 12:34:41 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 17, 2012 12:34:42 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Dec 17, 2012 12:34:42 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Dec 17, 2012 12:34:42 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/101  config=null
+Dec 17, 2012 12:34:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1598 ms
+Dec 17, 2012 12:34:42 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "null" failed.
+Dec 17, 2012 12:34:49 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Status 401
+Dec 17, 2012 12:34:49 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "asd" failed.
+Dec 17, 2012 12:37:52 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context []
+Dec 17, 2012 12:37:52 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+WARNING: JDBC driver de-registration failed for web application []
+java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc(WebappClassLoader.java:1979)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1915)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1833)
+	at org.apache.catalina.loader.WebappLoader.stop(WebappLoader.java:740)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4920)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/manager]
+Dec 17, 2012 12:37:53 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+WARNING: JDBC driver de-registration failed for web application [/manager]
+java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc(WebappClassLoader.java:1979)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1915)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1833)
+	at org.apache.catalina.loader.WebappLoader.stop(WebappLoader.java:740)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4920)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/docs]
+Dec 17, 2012 12:37:53 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+WARNING: JDBC driver de-registration failed for web application [/docs]
+java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc(WebappClassLoader.java:1979)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1915)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1833)
+	at org.apache.catalina.loader.WebappLoader.stop(WebappLoader.java:740)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4920)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:54 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/examples]
+Dec 17, 2012 12:37:54 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+WARNING: JDBC driver de-registration failed for web application [/examples]
+java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc(WebappClassLoader.java:1979)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1915)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1833)
+	at org.apache.catalina.loader.WebappLoader.stop(WebappLoader.java:740)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4920)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:54 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/host-manager]
+Dec 17, 2012 12:37:54 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+WARNING: JDBC driver de-registration failed for web application [/host-manager]
+java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc(WebappClassLoader.java:1979)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1915)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1833)
+	at org.apache.catalina.loader.WebappLoader.stop(WebappLoader.java:740)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4920)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:55 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/guacamole]
+Dec 17, 2012 12:37:55 PM org.apache.catalina.session.StandardManager doUnload
+SEVERE: IOException while saving persisted sessions: java.io.FileNotFoundException: /home/andrei/Temp/apache-tomcat-6.0.36/work/Catalina/localhost/guacamole/SESSIONS.ser (No such file or directory)
+java.io.FileNotFoundException: /home/andrei/Temp/apache-tomcat-6.0.36/work/Catalina/localhost/guacamole/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:209)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:99)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:501)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:470)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:679)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4882)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:55 PM org.apache.catalina.session.StandardManager stop
+SEVERE: Exception unloading sessions to persistent storage
+java.io.FileNotFoundException: /home/andrei/Temp/apache-tomcat-6.0.36/work/Catalina/localhost/guacamole/SESSIONS.ser (No such file or directory)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:209)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:99)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:501)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:470)
+	at org.apache.catalina.session.StandardManager.stop(StandardManager.java:679)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4882)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)
+Dec 17, 2012 12:37:55 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+WARNING: JDBC driver de-registration failed for web application [/guacamole]
+java.lang.NullPointerException
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc(WebappClassLoader.java:1979)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:1915)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1833)
+	at org.apache.catalina.loader.WebappLoader.stop(WebappLoader.java:740)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4920)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:936)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1212)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1382)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:142)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1389)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1653)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1662)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1642)
+	at java.lang.Thread.run(Thread.java:679)

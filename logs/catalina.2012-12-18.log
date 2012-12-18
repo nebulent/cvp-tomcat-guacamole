@@ -1,0 +1,855 @@
+Dec 18, 2012 3:45:34 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386:/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dec 18, 2012 3:45:35 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Dec 18, 2012 3:45:35 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1206 ms
+Dec 18, 2012 3:45:35 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Dec 18, 2012 3:45:35 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.36
+Dec 18, 2012 3:45:35 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Dec 18, 2012 3:45:36 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor guacamole.xml
+Dec 18, 2012 3:45:36 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: WebSocket support not found.
+Dec 18, 2012 3:45:36 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Dec 18, 2012 3:45:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 18, 2012 3:45:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 18, 2012 3:45:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 18, 2012 3:45:37 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Dec 18, 2012 3:45:37 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Dec 18, 2012 3:45:37 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/117  config=null
+Dec 18, 2012 3:45:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2319 ms
+Dec 18, 2012 3:49:33 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "null" failed.
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Username:jora@nebulent.com
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:vnc
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:5900
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:rdp
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:3389
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: User "jora@nebulent.com" successfully authenticated from 127.0.0.1.
+Dec 18, 2012 3:49:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Login was successful.
+Dec 18, 2012 3:49:59 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:49:59 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 3:50:11 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:50:11 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 3:50:17 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "null" failed.
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Username:jora@nebulent.com
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:vnc
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:5900
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:rdp
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:3389
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: User "jora@nebulent.com" successfully authenticated from 127.0.0.1.
+Dec 18, 2012 3:52:38 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Login was successful.
+Dec 18, 2012 3:52:40 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:52:40 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 3:52:59 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:52:59 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 3:56:26 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:56:26 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 3:56:29 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:56:29 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 3:57:00 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 3:57:00 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:00:49 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:00:49 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:01:05 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:01:05 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:05:47 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:05:47 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:05:54 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "null" failed.
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Username:jora@nebulent.com
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:vnc
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:5900
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:rdp
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:3389
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: User "jora@nebulent.com" successfully authenticated from 127.0.0.1.
+Dec 18, 2012 4:06:01 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Login was successful.
+Dec 18, 2012 4:06:04 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:06:29 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:06:29 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:06:36 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:07:08 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:07:08 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:07:14 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:07:41 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:07:41 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:08:04 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:08:04 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:09:20 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:10:12 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-54-242-198-107.compute-1.amazonaws.com".
+Dec 18, 2012 4:10:12 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:12:10 PM org.apache.coyote.http11.Http11Protocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-8080
+Dec 18, 2012 4:12:11 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Dec 18, 2012 4:12:11 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-8080
+Dec 18, 2012 4:12:14 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386:/usr/java/packages/lib/i386:/usr/lib/i386-linux-gnu/jni:/lib/i386-linux-gnu:/usr/lib/i386-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dec 18, 2012 4:12:14 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Dec 18, 2012 4:12:14 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1020 ms
+Dec 18, 2012 4:12:14 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Dec 18, 2012 4:12:14 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.36
+Dec 18, 2012 4:12:14 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Dec 18, 2012 4:12:15 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor guacamole.xml
+Dec 18, 2012 4:12:15 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: WebSocket support not found.
+Dec 18, 2012 4:12:15 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Dec 18, 2012 4:12:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Dec 18, 2012 4:12:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Dec 18, 2012 4:12:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Dec 18, 2012 4:12:16 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Dec 18, 2012 4:12:16 PM org.apache.jk.common.ChannelSocket init
+INFO: JK: ajp13 listening on /0.0.0.0:8009
+Dec 18, 2012 4:12:16 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/28  config=null
+Dec 18, 2012 4:12:16 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1670 ms
+Dec 18, 2012 4:12:23 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "null" failed.
+Dec 18, 2012 4:12:26 PM org.slf4j.impl.JCLLoggerAdapter warn
+WARNING: Authentication attempt from 127.0.0.1 for user "null" failed.
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Username:jora@nebulent.com
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-54-242-198-107.compute-1.amazonaws.com
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:vnc
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:5900
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Name:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Host:ec2-23-22-100-199.compute-1.amazonaws.com
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Protocol:rdp
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Port:3389
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: User "jora@nebulent.com" successfully authenticated from 127.0.0.1.
+Dec 18, 2012 4:12:35 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Login was successful.
+Dec 18, 2012 4:12:50 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:13:03 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:13:03 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:13:31 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:13:31 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:14:27 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:14:27 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:15:09 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:15:09 PM org.slf4j.impl.JCLLoggerAdapter error
+SEVERE: Server error in tunnel
+net.sourceforge.guacamole.GuacamoleServerException: java.net.ConnectException: Connection refused
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:109)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet$1.doConnect(BasicGuacamoleTunnelServlet.java:215)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.handleTunnelRequest(GuacamoleHTTPTunnelServlet.java:149)
+	at net.sourceforge.guacamole.servlet.GuacamoleHTTPTunnelServlet.doPost(GuacamoleHTTPTunnelServlet.java:94)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at net.sourceforge.guacamole.net.basic.BasicGuacamoleTunnelServlet.authenticatedService(BasicGuacamoleTunnelServlet.java:65)
+	at net.sourceforge.guacamole.net.basic.AuthenticatingHttpServlet.service(AuthenticatingHttpServlet.java:283)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:606)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:679)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:327)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:193)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:180)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:384)
+	at java.net.Socket.connect(Socket.java:546)
+	at net.sourceforge.guacamole.net.InetGuacamoleSocket.<init>(InetGuacamoleSocket.java:98)
+	... 20 more
+Dec 18, 2012 4:41:14 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:41:36 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:41:36 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Connection from 127.0.0.1 succeeded.
+Dec 18, 2012 4:41:50 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:41:58 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Successful connection from 127.0.0.1 to "ec2-23-22-100-199.compute-1.amazonaws.com".
+Dec 18, 2012 4:41:58 PM org.slf4j.impl.JCLLoggerAdapter info
+INFO: Connection from 127.0.0.1 succeeded.
