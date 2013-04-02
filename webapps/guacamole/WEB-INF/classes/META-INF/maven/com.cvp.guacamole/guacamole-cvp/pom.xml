@@ -1,0 +1,171 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.cvp.guacamole</groupId>
+    <artifactId>guacamole-cvp</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+    <name>guacamole-cvp</name>
+    <!-- url>https://www.chinoki.com/</url -->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <cxf.version>2.6.2</cxf.version>
+    </properties>
+
+    <build>
+        <plugins>
+
+            <!-- Written for 1.6 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>false</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.23</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.0.0</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Java servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- SLF4J - logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jcl</artifactId>
+            <version>1.6.1</version>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Guacamole Java API -->
+        <dependency>
+            <groupId>net.sourceforge.guacamole</groupId>
+            <artifactId>guacamole-common</artifactId>
+            <version>0.7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Guacamole Extension API -->
+        <dependency>
+            <groupId>net.sourceforge.guacamole</groupId>
+            <artifactId>guacamole-ext</artifactId>
+            <version>0.7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- CXF -->
+        <!--	<dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-transports-http</artifactId>
+            <version>${cxf.version}</version>
+            <scope>compile</scope>
+        </dependency>-->
+	   
+        <!--	<dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-extension-search</artifactId>
+            <version>${cxf.version}</version>
+            <scope>compile</scope>
+        </dependency>-->
+	     
+        <!--	<dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-extension-providers</artifactId>
+            <version>${cxf.version}</version>
+            <scope>compile</scope>
+        </dependency>-->
+	      
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+        <!-- also need JAXB annotation support -->
+        <dependency> 
+            <groupId>com.fasterxml.jackson.module</groupId>
+            <artifactId>jackson-module-jaxb-annotations</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>3.2.0.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>3.2.0.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Test -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>3.2.0.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8</version>
+            <scope>test</scope>
+        </dependency>
+		
+    </dependencies>
+
+    <repositories>
+        
+        <!-- Central Guacamole repository -->
+        <repository>
+            <id>guac-dev</id>
+            <url>http://guac-dev.org/repo</url>
+        </repository>
+        
+    </repositories>
+
+</project>
