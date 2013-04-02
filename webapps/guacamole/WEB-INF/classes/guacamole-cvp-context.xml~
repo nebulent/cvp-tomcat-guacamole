@@ -19,20 +19,21 @@
 	</property>
     </bean>
     
-<!--    <bean id="connector" class="net.sourceforge.guacamole.net.cvp.RedisConnector" init-method="init" destroy-method="destroy">
-	<property name="serverUrl" value="${redisServerUrl}" />
-	<property name="serverPort" value="${redisServerPort}" />
-	<property name="serverPassword" value="${redisServerPassword}" />
-	<property name="serverMaxActive" value="${redisMaxActive}" />
-	<property name="serverMaxIdle" value="${redisMaxIdle}" />
-	<property name="serverMaxWait" value="${redisMaxWait}" />
-	<property name="serverTestOnBorrow" value="${redisTestOnBorrow}" />
-    </bean>-->
+    <!-- bean id="connector" class="net.sourceforge.guacamole.net.cvp.RedisConnector" init-method="init" destroy-method="destroy">
+		<property name="serverUrl" value="${redisServerUrl}" />
+		<property name="serverPort" value="${redisServerPort}" />
+		<property name="serverPassword" value="${redisServerPassword}" />
+		<property name="serverMaxActive" value="${redisMaxActive}" />
+		<property name="serverMaxIdle" value="${redisMaxIdle}" />
+		<property name="serverMaxWait" value="${redisMaxWait}" />
+		<property name="serverTestOnBorrow" value="${redisTestOnBorrow}" />
+    </bean -->
     
-    <bean id="connector" class="net.sourceforge.guacamole.net.cvp.MySQLConnector" init-method="init" destroy-method="destroy">
-        <property name="dbUrl" value="${mysql.server.url}" />
-	<property name="user" value="${mysql.server.user}" />
-	<property name="password" value="${mysql.server.password}" />
-    </bean>      
+    <bean id="connector" class="net.sourceforge.guacamole.net.cvp.MysqlConnector" init-method="init" destroy-method="destroy">
+		<property name="serverUrl" value="${mysqlServerUrl}" />
+		<property name="serverPort" value="${mysqlServerPort}" />
+		<property name="serverUsername" value="${mysqlServerUsername}" />
+		<property name="serverPassword" value="${mysqlServerPassword}" />
+    </bean>
     
 </beans>
