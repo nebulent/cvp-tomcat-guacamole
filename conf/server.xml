@@ -67,6 +67,9 @@
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
     <Connector port="3032" protocol="HTTP/1.1"
+	maxThreads="150" minSpareThreads="25" maxSpareThreads="75"
+        enableLookups="false" disableUploadTimeout="true"
+        acceptCount="100" 
 	   scheme="https" secure="true" SSLEnabled="true"
            keystoreFile="tomcat.keystore" keystorePass="123456"
            clientAuth="false" sslProtocol="TLS"/>
